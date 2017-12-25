@@ -16,7 +16,7 @@ table#toron tbody tr td {
 }
 
 #redirect {
-    margin-top: -25px;
+    margin-top: -20px;
 }
 
 #log {
@@ -500,4 +500,12 @@ input {
 
 input[type="checkbox"] {
     width: auto;
+}
+
+body {
+    font-size: 14px;
+}
+
+h2#topic_top_title {
+    margin-top: -10px;
 }
