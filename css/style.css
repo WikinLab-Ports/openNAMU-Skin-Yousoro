@@ -1,7 +1,3 @@
-#logo:hover, #logo:focus {
-    color: #B2DFEA;
-}
-
 #in {
     margin-left: 20px;
 }
@@ -35,10 +31,6 @@ table#toron tbody tr td {
     margin-top: 30px;
 }
 
-#log:hover, #log:focus {
-    color: #B2DFEA;
-}
-
 a#inside {
     color: green;
 }
@@ -48,12 +40,6 @@ a#inside {
     border: 1px solid #777;
     padding: 5px;
     margin-top: 1em;
-}
-
-button#goto {
-    border-radius: 0;
-    border-left: 0;
-    border-right: 0;
 }
 
 textarea, label, span, body, strong, b, div, h1, h2, h3, h4, h5, h6, h7, input {
@@ -73,13 +59,8 @@ li {
     margin-bottom: 2px;
 }
 
-.contect {
-    color: #FFFFFF;
-    background-color: #008000;
-}
-
 .out_link {
-    color: #008000;
+    color: green;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -90,16 +71,7 @@ td:hover {
     background: #ddd;
 }
 
-ref {
-    background-color: #efefef;
-    color: #555555;
-    border: 1px solid #cecece;
-    font-size: 0.8rem;
-    margin-left: 0.1rem;
-    margin-right: 0.2rem;
-}
-
-iframe {
+iframe, img {
     max-width: 100%;
 }
 
@@ -116,10 +88,6 @@ blockquote {
     background-size:25px;
 }
 
-img {
-    max-width: 100%;
-}
-
 td {
     padding: 5px 10px;
     border: 1px solid #dddddd;
@@ -132,10 +100,6 @@ table {
 .title {
     display: inline-block;
     margin-bottom: 30px;
-}
-
-not_del {
-    display: none;
 }
 
 #toc {
@@ -169,7 +133,9 @@ pre {
 }
 
 s:hover, strike:hover, del:hover {
-    color:#666;background-color:#eee;text-decoration:none;
+    color: #666;
+    background-color: #eee;
+    text-decoration: none;
 }
 
 .menu-item {
@@ -196,12 +162,6 @@ s:hover, strike:hover, del:hover {
     float: right;
     padding: 5px;
     margin-bottom: 0;
-}
-
-#logo {
-    float: left;
-    margin-right: 10px;
-    padding: 5px;
 }
 
 .one-fifth.column {
@@ -270,10 +230,9 @@ div.scroll-buttons {
     height: auto;
     font-size: 25px;
     color: white;
-}
-
-#logo:hover {
-    text-decoration: none;
+    float: left;
+    margin-right: 10px;
+    padding: 5px;
 }
 
 #powered {
@@ -304,6 +263,7 @@ table {
         width: 100%;
         margin-bottom: 5px;
     }
+
     .input-group {
         width: 100%;
     }
@@ -326,11 +286,6 @@ body {
     background: #EFEFEF;
 }
 
-#yosolo {
-    width: 33.33%;
-    text-align: center;
-}
-
 #toron {
     width: 100%;
 }
@@ -343,17 +298,12 @@ body {
     background-color: #f3c2c2;
 }
 
+#toron_color_blue {
+    background: #c1ebff;
+}
+
 #toron_color {
     background-color: #d5d5d5;
-}
-
-#bb {
-    background: #a28a7e;
-    color: white;
-}
-
-#history {
-    margin-right: 10px;
 }
 
 .popup {
@@ -368,22 +318,6 @@ body {
     z-index: 10000;
     max-height: 30%;
     overflow-y: scroll;
-}
-
-.foot {
-    position: fixed;
-    bottom: 0px;
-    padding: 10px;
-    width: 100%;
-    background: white none repeat scroll 0% 0%;
-    left: 0px;
-    border: 1px solid #ccc;
-    text-align: center;
-    z-index: 10000;
-}
-
-#bl {
-    background: gainsboro;
 }
 
 @media (min-width: 768px) {
@@ -415,7 +349,7 @@ textarea {
 }
 
 a.not_thing {
-    color: #bf4c4c;
+    color: red;
 }
 
 #open {
@@ -437,11 +371,6 @@ pre span {
 
 #is_mobile {        
     margin-left: 5px;        
-}
-
-#RecentChanges:hover, #RecentChanges:focus {        
-    text-decoration: none;        
-    color: #B2DFEA;        
 }
 
 #RecentChanges {        
@@ -468,28 +397,6 @@ pre span {
     }        
 }
 
-#block {
-    background: gainsboro;
-}
-
-#toron_color_blue {
-    background: #c1ebff;
-}
-
-.foot {
-    position: fixed;
-    bottom: 0px;
-    padding: 10px;
-    width: 100%;
-    background: white none repeat scroll 0% 0%;
-    left: 0px;
-    border: 1px solid #ccc;
-    text-align: center;
-    z-index: 10000;
-    max-height: 30%;
-    overflow-y: scroll;
-}
-
 #edit_time {
     float: right;
     margin-top: -5px;
@@ -509,4 +416,8 @@ body {
 
 h2#topic_top_title {
     margin-top: -10px;
+}
+
+#logo, #RecentChanges, #log {
+    text-decoration: none;
 }

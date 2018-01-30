@@ -5,11 +5,11 @@
         <title>{{imp[0]}} - {{imp[1][0]}}</title>
         <link rel="stylesheet" href="/views/yousoro/css/primer.css">
         <link rel="stylesheet" href="/views/yousoro/css/style.css">
+        <link rel="stylesheet" href="/views/yousoro/css/font-awesome/css/font-awesome.min.css">
         <!-- 필수 CSS, JS -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
         <script>hljs.initHighlightingOnLoad();</script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
-        <link rel="stylesheet" href="/views/yousoro/css/awesome/font-awesome.min.css">
         <script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax: {inlineMath: [['[math]', '[/math]']]}});</script>
         <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML"></script>
         <script>
