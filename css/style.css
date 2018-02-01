@@ -421,3 +421,28 @@ h2#topic_top_title {
 #logo, #RecentChanges, #log {
     text-decoration: none;
 }
+
+button {
+    position: relative;
+    display: inline-block;
+    padding: 6px 12px;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 20px;
+    color: #333;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    background-color: #eee;
+    background-image: linear-gradient(#fcfcfc, #eee);
+    border: 1px solid #d5d5d5;
+    border-radius: 3px;
+}
+
+button#save {
+    color:#fff;
+    text-shadow:0 -1px 0 rgba(0,0,0,0.15);
+    background-color:#60b044;
+    background-image:linear-gradient(#8add6d, #60b044);
+    border-color:#5ca941;
+}
