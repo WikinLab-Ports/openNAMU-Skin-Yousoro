@@ -59,7 +59,7 @@ li {
     margin-bottom: 2px;
 }
 
-.out_link {
+#out_link {
     color: green;
 }
 
@@ -339,7 +339,7 @@ body {
     }
 }
 
-.out_link::before {
+#out_link::before {
     padding: 0px;
     background: transparent;
     color: green;
@@ -351,7 +351,7 @@ textarea {
     width: 100%;
 }
 
-a.not_thing {
+#not_thing {
     color: red;
 }
 
