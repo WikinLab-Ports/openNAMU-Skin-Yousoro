@@ -186,7 +186,6 @@ s:hover, strike:hover, del:hover {
 
 div.scroll-buttons a {
     display: inline-block;
-    float: left;
     width: 42px;
     height: 42px;
     padding: 5px 8px 9px 8px;
@@ -448,4 +447,12 @@ button#save {
     background-color:#60b044;
     background-image:linear-gradient(#8add6d, #60b044);
     border-color:#5ca941;
+}
+
+.scroll-toc {
+    margin-right: -8px;
+}
+
+#left {
+    margin-right: -8px;
 }
