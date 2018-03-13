@@ -7,8 +7,8 @@
         <link rel="stylesheet" href="/views/yousoro/css/style.css">
         <link rel="stylesheet" href="/views/yousoro/css/font-awesome/css/font-awesome.min.css">
         <!-- 필수 CSS, JS -->
-        {{!imp[1][5]}}
-        {{!imp[2][3]}}
+        {{imp[1][5]|safe}}
+        {{imp[2][3]|safe}}
         <!-- 필수 부분 끝 -->
         <meta name="twitter:creator" content="@{{imp[1][0]}}">
         <meta name="twitter:title" content="{{imp[0]}}">
@@ -21,7 +21,7 @@
         <br>
         <div class="one-fifth column">
             <div id="top">
-                <a href="/" id="logo">{{!imp[1][4]}}</a>
+                <a href="/" id="logo">{{imp[1][4]|safe}}</a>
                 <div>
                     <a href="/recent_changes" id="RecentChanges">
                         <i class="fa fa-refresh" aria-hidden="true"></i>
@@ -35,13 +35,13 @@
                         <i class="fa fa-random" aria-hidden="true"></i>
                     </a>
                     <a href="/user" id="log">
-                        % if(imp[2][2] == 1):
+                        {% if imp[2][2] == 1 %}
                             <i class="fa fa-user" aria-hidden="true"></i>
-                        % elif(imp[2][2] == 0):
+                        {% elif imp[2][2] == 0 %}
                             <i class="fa fa-user-times" aria-hidden="true"></i>
-                        % else:
+                        {% else %}
                             <i class="fa fa-user-secret" aria-hidden="true"></i>
-                        % end
+                        {% endif %}
                     </a>
                     <a href="/other" id="log">
                         <i class="fa fa-cogs" aria-hidden="true"></i>
@@ -67,38 +67,38 @@
         </div>
         <div id="all_contect">
             <div class="four-fifths column">
-                % if(not menu == 0):
+                {% if not menu == 0 %}
                     <div id="tool">
                         <nav class="menu">
-                            % for sub_d in menu:
-                                % if(sub_d[1] == 1):
+                            {% for sub_d in menu %}
+                                {% if sub_d[1] == 1 %}
                                     <a class="menu-item" href="/{{sub_d[0]}}" id="open">토론</a>
-                                % elif(sub_d[1] == 0):
+                                {% elif sub_d[1] == 0 %}
                                     <a class="menu-item" href="/{{sub_d[0]}}">토론</a>
-                                % else:
+                                {% else %}
                                     <a class="menu-item" href="/{{sub_d[0]}}">{{sub_d[1]}}</a>
-                                % end
-                            % end
+                                {% endif %}
+                            {% endfor %}
                         </nav>
                         <br>
                         <span id="edit_time">
-                            % if(imp[3][1] != 0):
+                            {% if imp[3][1] != 0 %}
                                 최근 수정 : {{imp[3][1]}}
-                            % end
+                            {% endif %}
                         </span>
                     </div>
-                % end
+                {% endif %}
                 <h1 class="title">
                     {{imp[0]}}
-                    % if(imp[3][0] != 0):
+                    {% if imp[3][0] != 0 %}
                         <sub>{{imp[3][0]}}</sub>
-                    % end
+                    {% endif %}
                 </h1>
                 <br>
-                {{!data}}
+                {{data|safe}}
                 <hr id="last">
                 <p>
-                    {{!imp[1][1]}}
+                    {{imp[1][1]|safe}}
                 </p>
                 <div id="powered">
                     <a href="https://github.com/2DU/openNAMU"><img src="/views/yousoro/img/on2.png" width="100px"></a>
