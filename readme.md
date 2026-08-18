@@ -1,2 +1,5 @@
-## 개요
-이 스킨은 지원 중지 되었습니다. [새 스킨](https://github.com/2DU/openNAMU-Skin-Neo_YouSoro)
+## Yousoro
+openNAMU Yousoro 스킨의 유지보수 버전입니다.
+
+## 이력
+[Discard-openNAMU-Skin-Yousoro](https://github.com/openNAMU/Discard-openNAMU-Skin-Yousoro) → [openNAMU-Skin-Yousoro](https://github.com/WikinLab-Ports/openNAMU-Skin-Yousoro)
